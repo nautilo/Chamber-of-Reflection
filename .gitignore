@@ -1,0 +1,13 @@
+# PyTorch
+*.pt
+*.pth
+
+# Dataset
+dataset/
+text8.zip
+
+# Python
+__pycache__/
+*.pyc
+.env
+venv/
