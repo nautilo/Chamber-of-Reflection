@@ -1,5 +1,5 @@
 # Chamber of Reflection V4.0 (Emergence Edition)
-### Un Motor de Estado Continuo Recurrente con Complejidad Lineal O(N) para Modelado de Lenguaje Soberano
+### Un Motor de Lenguaje de Estado Continuo Recurrente con Complejidad Lineal O(N) y Dualidad de Embeddings
 
 Este repositorio contiene la implementación en PyTorch de **Chamber of Reflection V4.0**, una arquitectura de red neuronal profunda diseñada como una alternativa de alta eficiencia a los modelos basados en la atención tradicional (Transformers). El motor aborda directamente el problema de la huella de memoria cuadrática mediante la compresión del historial contextual en un espacio latente continuo de ondas semántico-sintácticas.
 
@@ -9,7 +9,7 @@ Este repositorio contiene la implementación en PyTorch de **Chamber of Reflecti
 
 La arquitectura Transformer dominante depende del mecanismo de *Self-Attention* (Autoatención). Para una secuencia de longitud N, el cálculo de las matrices de atención requiere emparejar cada token con todos los anteriores, resultando en una complejidad computacional y de memoria de O(N^2).
 
-## ⚡ 2. Nuestra Solución: Flujo Secuencial Lineal O(N)
+## ⚡ 2. Solución Propuesta: Flujo Secuencial Lineal O(N)
 
 **Chamber of Reflection V4.0** rompe el paradigma cuadrático al adoptar un enfoque de **Estado Continuo Recurrente**. En lugar de almacenar toda la matriz de relaciones pasadas, el modelo comprime la historia en un estado latente dinámico.
 
@@ -21,7 +21,7 @@ La arquitectura Transformer dominante depende del mecanismo de *Self-Attention* 
 ## 🧠 3. Arquitectura del Modelo e Innovación Matemática
 
 ### A. Dualidad de Embeddings: Matriz Semántica y Sintáctica
-A diferencia de los modelos comunes que solo proyectan la identidad del token, nuestra arquitectura descompone cada elemento del vocabulario en dos frecuencias vectoriales concurrentes: Semántica y Sintaxis.
+A diferencia de los modelos comunes que solo proyectan la identidad del token, esta arquitectura descompone cada elemento del vocabulario en dos frecuencias vectoriales concurrentes: Semántica y Sintaxis.
 
 ### B. El Mecanismo de Filtrado de la Cámara
 Cada capa del motor procesa la información a través de una compuerta sigmoide de actualización dinámica que regula qué porcentaje de la memoria histórica se conserva y qué porcentaje del nuevo estímulo se asimila.
